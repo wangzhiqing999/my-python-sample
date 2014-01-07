@@ -11,6 +11,7 @@ guess = int(input('请输入一个整数: '));
 
 if (guess == number):
     # Python 中，不像 类C语言的那种， 有 {  }  来表示 if() {多行代码}  else {多行代码}
+    # 是靠代码前的空格来判断的。
     # New block starts here
     print ('数据匹配！');
     print ("if 情况下的第二行代码！");
