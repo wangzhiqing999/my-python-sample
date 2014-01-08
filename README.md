@@ -36,7 +36,7 @@ func_default.py     函数的参数的默认值。
 func_key.py         使用关键参数。
 func_return.py      函数的返回值。
 func_doc.py         函数的文档。
-
+func_annotations.py 函数的annotation
 
 
 ### A0051_BasicModule
@@ -54,12 +54,16 @@ mymodule_demo2.py   调用自定义模块的例子. (这里使用了 from..impor
 ### A0061_BasicCollections
 基本的集合处理.
 包含
-using_list.py       list 的使用. (列表)
-using_tuple.py      tuple 的使用. (数组)
-using_dict.py       dict  的使用. (字典)
-seq.py              序列的处理.
-reference.py        参考的情况. ( 也就是简单的赋值 与 拷贝的对比 )
-str_methods.py      字符串的相关方法.
+using_list.py           list 的使用. (列表)
+using_list_del.py       list 中，使用 del 的处理.
+using_list_as_stack.py  使用 list 实现堆栈的效果（后进先出）
+using_list_as_queue.py  使用 list 实现队列的效果（先进先出）
+using_tuple.py          tuple 的使用. (数组)
+using_dict.py           dict  的使用. (字典)
+using_set.py            set   的使用. 
+seq.py                  序列的处理.
+reference.py            参考的情况. ( 也就是简单的赋值 与 拷贝的对比 )
+str_methods.py          字符串的相关方法.
 
 
 
@@ -100,8 +104,9 @@ finally.py          try..finally
 ### A0101_Other
 其他的内容.
 包含
-assert.py               断言处理.
-exec_eval.py            exec和eval语句
-lambda.py               lambda形式
-list_comprehension.py   列表综合
-repr.py                 repr函数
+assert.py                       断言处理.
+exec_eval.py                    exec和eval语句
+lambda.py                       lambda形式
+list_comprehension.py           列表综合
+nested_list_comprehension.py    2维列表综合
+repr.py                         repr函数
