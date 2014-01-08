@@ -1,4 +1,5 @@
-Python 学习的例子.
+﻿Python 学习的例子.
+（以下例子运行于 python 3.3）
 
 
 ### A0001_HelloWorld
@@ -28,7 +29,7 @@ for.py              for 循环的处理。 ( continue 与 break 的例子在这�
 基本的函数的知识.
 包含
 func_def.py         函数的基本定义。
-func_param.py       函数的参数。
+func_param.py       函数的参数。(包含固定参数，与可变参数的例子)
 func_local.py       局部变量。
 func_global.py      全局变量。
 func_default.py     函数的参数的默认值。
@@ -70,8 +71,37 @@ simplestclass.py    一个空白的类.
 method.py           类里面定义方法.
 class_init.py       __init__方法
 objvar.py           类与对象的变量
+inherit.py          继承
 
 
 
 
 
+### A0081_BasicIO
+输入/输出
+包含
+using_file.py       文件访问的处理.
+pickling.py         储存器 (用于序列化与反序列化)
+
+
+
+
+
+### A0091_BasicException
+异常的处理.
+包含
+try_except.py       try..except 处理异常.
+raising.py          使用raise语句 引发 异常.
+finally.py          try..finally
+
+
+
+
+### A0101_Other
+其他的内容.
+包含
+assert.py               断言处理.
+exec_eval.py            exec和eval语句
+lambda.py               lambda形式
+list_comprehension.py   列表综合
+repr.py                 repr函数
