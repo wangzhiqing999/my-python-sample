@@ -1,4 +1,4 @@
-﻿# coding:utf-8
+# coding:utf-8
 
 # 函数形参.
 
@@ -10,31 +10,28 @@
 def printMax(a, b):
     # 从这里开始，就是函数体了.
     if a > b:
-        print (a, 'is maximum!');
+        print(a, 'is maximum!')
     else:
-        print (b, 'is maximum!');
+        print(b, 'is maximum!')
 
 
 # 这里定义参数的时候， 后一个参数的前面， 是一个 *
 # 这种可以理解为后续是可变的参数.
 def printMin(a, *b):
-    result = a;
+    result = a
     for tmpVal in b:
-        if (result > tmpVal) :
-            result = tmpVal;
-    print("最小的数值是：", result);
-
+        if (result > tmpVal):
+            result = tmpVal
+    print("最小的数值是：", result)
 
 
 # 直接调用函数(数值).
-printMax(3, 4);
-
+printMax(3, 4)
 
 # 定义变量，然后调用 函数(变量名)
-x = 5;
-y = 7;
-printMax(x, y);
-
+x = 5
+y = 7
+printMax(x, y)
 
 # 直接调用函数(数值).
-printMin(9, 8, 7, 6, 5, 8, 7, 4, 3, 2, 1, 10, 9, 8);
+printMin(9, 8, 7, 6, 5, 8, 7, 4, 3, 2, 1, 10, 9, 8)

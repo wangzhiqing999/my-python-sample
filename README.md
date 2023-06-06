@@ -111,3 +111,22 @@ lambda.py                       lambda形式
 list_comprehension.py           列表综合
 nested_list_comprehension.py    2维列表综合
 repr.py                         repr函数
+
+
+
+
+
+
+### B0001_mysql
+将一个大的 sql 文件，拆分为多个小的 sql 文件。
+依次执行多个小的 sql 文件。
+
+
+
+### B0002_BeautifulSoup
+解析 HTML 代码片段，获取其中的 文本内容。
+
+
+
+### B0003_mysql_to_text
+尝试将 mysql 的新闻表中，存储了 html 的字段的数据， 导出到 txt 文件中。

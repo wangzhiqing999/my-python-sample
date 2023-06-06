@@ -1,20 +1,18 @@
 # -*- coding: utf-8 -*-
 
-
-# __annotations__  Ð§¹ûÉÏÃæ¿ÉÒÔÕâÃ´ÓÃ.
-
+# __annotations__  æ•ˆæžœä¸Šé¢å¯ä»¥è¿™ä¹ˆç”¨.
 
 
 def f(ham: 42, eggs: int = 'spam') -> "Nothing to see here":
-    print("Annotations:", f.__annotations__);
-    ann = f.__annotations__;
-    print("ham=", ann["ham"] );
-    print("eggs=", ann["eggs"] );
-    print("return=", ann["return"] );
-    
-    print("Arguments:", ham, eggs);
+    print("Annotations:", f.__annotations__)
+    ann = f.__annotations__
+    print("ham=", ann["ham"])
+    print("eggs=", ann["eggs"])
+    print("return=", ann["return"])
+
+    print("Arguments:", ham, eggs)
 
 
-f('wonderful');
+f('wonderful')
 
-f(1024, 'wonderful');
+f(1024, 'wonderful')
