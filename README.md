@@ -47,7 +47,7 @@ using_name.py       模块的名称（主程序）
 using_name2.py      模块的名称（被其他程序引用）
 mymodule.py         自定义模块的例子
 mymodule_demo.py    调用自定义模块的例子.
-mymodule_demo2.py   调用自定义模块的例子. (这里使用了 from..import语句 ) 
+mymodule_demo2.py   调用自定义模块的例子. (这里使用了 from..import语句 )
 
 
 
@@ -60,7 +60,7 @@ using_list_as_stack.py  使用 list 实现堆栈的效果（后进先出）
 using_list_as_queue.py  使用 list 实现队列的效果（先进先出）
 using_tuple.py          tuple 的使用. (数组)
 using_dict.py           dict  的使用. (字典)
-using_set.py            set   的使用. 
+using_set.py            set   的使用.
 seq.py                  序列的处理.
 reference.py            参考的情况. ( 也就是简单的赋值 与 拷贝的对比 )
 str_methods.py          字符串的相关方法.
@@ -130,3 +130,14 @@ repr.py                         repr函数
 
 ### B0003_mysql_to_text
 尝试将 mysql 的新闻表中，存储了 html 的字段的数据， 导出到 txt 文件中。
+
+
+
+
+### B0004_postgres
+访问 postgres 数据库的例子.
+一种是使用 psycopg2 直接访问 postgres 数据库。
+一种是使用 postgrest， 通过 postgrest 服务器，间接访问 postgres 数据库。
+
+
+
