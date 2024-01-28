@@ -129,6 +129,10 @@ repr.py                         repr函数
 
 
 
+一个目录下，有很多的 sql 文件， 需要依次执行.
+
+
+
 ### B0002_BeautifulSoup
 解析 HTML 代码片段，获取其中的 文本内容。
 

@@ -23,3 +23,27 @@ cut_dump_file.py  负责将那个大的 sql 文件，拆分为多个小的 sql �
 insert_dump_file.py  负责依次执行 小的 sql 文件.
 
 
+
+
+
+
+
+执行某个目录下的所有 sql 文件.
+run_sql.py
+
+(注意：这个脚本，没有写   -- 的判断， 注释请以  /* 注释内容 */ 的方式来写. )
+
+
+
+
+
+安装 pymysql
+pip3 install pymysql
+
+
+验证
+pip list
+Package Version
+------- -------
+pip     23.2.1
+PyMySQL 1.1.0
