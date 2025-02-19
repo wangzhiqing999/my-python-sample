@@ -23,20 +23,20 @@ if you wanna make your work also fun:
 '''
 
 
-print("将文本信息，写入到文件中去...");
+print("将文本信息，写入到文件中去...")
 
 # open for 'w'riting   
 # 以写入方式， 打开文件 poem.txt
 with open('poem.txt', 'w') as f:
     # 将前面的文本信息， 写入到文件当中去.
-    f.write(poem);
+    f.write(poem)
 # 关闭文件.
-f.close();
+f.close()
 
 
 
  
-print("从文件中，读取文本信息...");
+print("从文件中，读取文本信息...")
 
 # if no mode is specified, 'r'ead mode is assumed by default
 # 以读取方式， 打开文件. 
@@ -49,7 +49,7 @@ with open('poem.txt') as f:
         if len(line) == 0: # Zero length indicates EOF
             break
         # 调试 .  这里的  end=''  , 意味着 print 语句， 不进行换行的处理.
-        print (line, end='');
+        print (line, end='')
 
 # 关闭文件.
-f.close();
+f.close()

@@ -15,7 +15,7 @@ class Person:
 
 # 这里创建一个对象。
 # 注意：和 C# 不同的是， 创建一个对象， 不需要写 new .
-p = Person();
+p = Person()
 
 
-print (p);
+print (p)

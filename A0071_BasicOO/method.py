@@ -10,10 +10,10 @@ class Person:
 
     # 类里面定义一个方法.
     def sayHi(self):
-        print ('Hello, how are you?');
+        print ('Hello, how are you?')
 
 
 # 构造一个对象.
-p = Person();
+p = Person()
 # 调用对象的方法.
 p.sayHi()

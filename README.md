@@ -84,6 +84,7 @@ inherit.py          继承
 ### A0081_BasicIO
 输入/输出
 包含
+test_os.py			与操作系统进行交互的功能.
 using_file.py       文件访问的处理.
 using_file_with.py  访问文件的时候， 使用 with ， 来增加代码的可读性，以及避免误操作。
 pickling.py         储存器 (用于序列化与反序列化)
@@ -150,4 +151,21 @@ repr.py                         repr函数
 一种是使用 postgrest， 通过 postgrest 服务器，间接访问 postgres 数据库。
 
 
+
+
+### B0005_Ollama
+使用 ollama 库， 调用 Ollama 的例子。
+hello_world.py 是等待全部响应都返回了，才输出结果。
+hello_world2.py 是流式输出结果。
+
+
+
+### B0006_Pandas
+使用 Pandas 库的例子。
+Pandas 是 Python 中一个强大的数据分析工具库，广泛应用于数据处理、清洗、分析和可视化。
+
+
+### B0007_NumPy
+使用 NumPy 库的例子。
+NumPy提供了高效的数组操作和数学函数。
 

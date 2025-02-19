@@ -213,3 +213,7 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+
+# PyCharm Community Edition 2024.3.3
+.idea
