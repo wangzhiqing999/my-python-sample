@@ -169,3 +169,9 @@ Pandas 是 Python 中一个强大的数据分析工具库，广泛应用于数�
 使用 NumPy 库的例子。
 NumPy提供了高效的数组操作和数学函数。
 
+
+### C0001_Sql_Executor
+使用 fastapi，执行 SQL 语句的例子。
+这个主要用于 Dify 工作流中， LLM 生成 sql 语句之后， 向这个程序提交 HTTP POST 请求。
+这里是接收到 sql语句后，执行，然后，将结果，以 json 的方式返回。
+然后，在 Dify 工作流中，下一个 LLM 用于分析处理。
