@@ -34,9 +34,36 @@ async def execute_query(
 ):
     """处理POST请求以执行SQL查询。"""
     try:
+
+        if verify_api_key(api_key) is False:
+            raise HTTPException(status_code=401, detail="Unauthorized")
+
+        # strip() 方法会移除字符串开头和结尾的所有空白字符，包括空格、制表符（\t）、换行符（\n）等。
         sql_queries = query.sql_query.strip()
 
-        
+        if not sql_queries:
+            raise HTTPException(status_code=400, detail="Missing sql_query parameter")
+
+        # 先全部转换为小写.
+        sql_lower = sql_queries.lower();
+
+        if sql_lower.find('alter ') >= 0 or sql_lower.find('create ') >= 0 or sql_lower.find('drop ') >= 0:
+            # 不处理 变更、创建、移除
+            return []
+
+        if sql_lower.find('update ') >= 0 or sql_lower.find('delete ') >= 0:
+            # 不处理 更新与删除
+            return []
+
+        start_index = sql_lower.find('select ')
+        if start_index == -1:
+            # 语句中不包含 select.
+            return []
+
+        if start_index > 0:
+            sql_queries = sql_queries[start_index:]
+
+
         print(sql_queries)
         # sql_queries 是外部传递进来的参数.
         # LLM 模型，可能会传递一些特殊的字符或标记，需要先移除掉.
@@ -46,8 +73,6 @@ async def execute_query(
         sql_queries = sql_queries.replace("SQL 查询", "")
 
 
-        if not sql_queries:
-            raise HTTPException(status_code=400, detail="Missing sql_query parameter")
 
 
         with get_db_connection(app.db_config) as conn:
