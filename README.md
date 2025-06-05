@@ -192,4 +192,6 @@ NumPy提供了高效的数组操作和数学函数。
 将一个 python 项目，发布到 Docker 上运行.
 
 
+### C0005_edge_tts
+调用 edge_tts， 实现 文本信息 生成 mp3文件 的操作。
 

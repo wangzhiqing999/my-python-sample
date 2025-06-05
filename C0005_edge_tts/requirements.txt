@@ -1,0 +1,2 @@
+asyncio
+edge_tts
