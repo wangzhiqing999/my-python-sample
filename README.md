@@ -195,3 +195,7 @@ NumPy提供了高效的数组操作和数学函数。
 ### C0005_edge_tts
 调用 edge_tts， 实现 文本信息 生成 mp3文件 的操作。
 
+
+### C0006_xinference
+调用部署在本地的 xinference 下面的 ChatTTS 模型，实现 文本信息 生成 mp3文件 的操作。
+
